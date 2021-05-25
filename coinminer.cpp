@@ -84,7 +84,7 @@ public:
         return result;
     }
 
-    void miningProjections(int cmpt, int timer)
+    void inline miningProjections(int cmpt, int timer)
     {
         int projectionTime;
         int hour;
@@ -129,7 +129,7 @@ public:
         cout << "11c (grand cross)    " << projectionTime << "s     (" << hour << "." << minute % 60 << " h)" << endl;
     }
 
-    void benchmark(int timer)
+    void inline benchmark(int timer)
     {
 
         cout << "Starting benchmark..." << endl;
@@ -160,7 +160,7 @@ public:
         miningProjections(cmpt, totalTime);
     }
 
-    void mining(int m)
+    void inline mining(int m)
     {
         string token;
         string hash;
